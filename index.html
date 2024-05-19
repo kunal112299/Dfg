@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .main{
+        z-index: 100; /* Higher z-index for the navbar */
+      }
+      .swiper {
+        z-index: 0; /* Lower z-index for the Swiper container */
+        width: 100%;
+        height: 70vh;
+      }
+      img{
+        object-fit: contain;
+      }
+      #project{
+        margin-top: -30px;
+        padding: 0;
+        margin-left: 0;
+      }
+      .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+      }
+      .dropdown-menu {
+       position: absolute;
+       top: -100%;
+       left: 0;
+       background-color: white;
+       width: 100%;
+    /* Other styles... */
+}
+      .swiper-button-next,
+      .swiper-button-prev {
+        z-index: 99; /* Ensure Swiper arrows are above other elements */
+      }
+
+    </style>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="main">
+      <nav class="flex justify-between items-center px-12 h-16 md:gap-8">
+        <a href="#" class="text-2xl font-bold md:hidden"><img class="h-16 w-28" src="logo.jpg" alt=""></a>
+        <div class="dropdown-menu absolute bg-white w-full flex flex-col gap-6 items-center py-2 text-lg font-bold md:static md:bg-white md:flex-row md:justify-between" style="z-index: 100;">
+          <a href="#" class="text-2xl  pacifico-regular">Design Factory .</a>
+          <ul class = "flex flex-col items-center gap-[4vw] md:flex-row md:gap-6  ">
+            <li class="hover:text-orange-200 text-orange-400">Home</li>
+            <li class="hover:text-orange-400">Projects</li>
+            <li class="hover:text-orange-400">Hiring</li>
+            <li class="hover:text-orange-400 whitespace-nowrap">About us</li>
+            <li class="hover:text-orange-400 whitespace-nowrap">Contact us</li>
+          </ul>
+          <div class="flex flex-col items-center gap-6 md:flex-row lg:gap-10">
+            <button class="hover:text-orange-400">Login</button>
+            <button class="bg-orange-400 hover:bg-orange-200 rounded-lg px-2 py-1">SignUp</button>
+          </div>
+        </div>
+        <div class="toggle-button md:hidden cursor-pointer">
+          <i class = "fa-solid fa-bars fa-lg"></i>
+        </div>
+      </nav>
+    </div>
+       <!-- navbar ends -->
+       <!-- Body starts carousal -->
+       <div class="swiper mySwiper">
+        <div class="swiper-wrapper" >
+          <div class="swiper-slide"><img src="img1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img6.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+       <!-- Carousal ends -->
+       <!-- Project section starts here -->
+       <div class="h-[24vh] md:h-[36vh] lg:h-[50vh] w-[100%]  mt-[10px] flex">
+        <div class="w-[50%] flex justify-center items-center">
+          <h1 class="pacifico-regular text-2xl md:text-6xl lg:text-6xl p-8 px-6 lg:px-18 lg:w-[80%] w-100%">Turning Houses into Homes, inside and out</h1>
+        </div>
+        <div class="w-[50%] flex justify-center items-center flex-col">
+          <p class="pt-9 text-[8px] mb-[30px] md:text-[13px] lg:text-[15px] lg:px-[10px] text-gray-400"> At Design Factory Group, we're passionate about turning houses into homes, inside and out. Our mission is to transform every space into a personalized and functional oasis that reflects the unique style and personality of our clients. With a focus on both interior and exterior design, we take a holistic approach to creating harmonious living environments. From cozy living rooms to inviting outdoor retreats, we believe that every detail matters in making a house feel like a true home. With our expertise and dedication, we're committed to exceeding our clients' expectations and helping them achieve their dream living spaces.</p>
+          <!-- <a class=" text-[9px] lg:px-[10px] lg:text-xl text-orange-400 underline-offset-4" id="project" href="#"><u>View Projects</u></a> -->
+        </div>
+       </div>
+       <!-- Project section ends here -->
+       <!-- Residential and commercial section starts-->
+       <!-- <main class="flex justify-between pt-0 ">
+          <div class="md:h-[300px] w-[15vh] lg:w-[8vw] h-[300px] bg-black flex flex-col pt-10 sm:pt-1">
+            <div class="w-[50%] h-[50%] flex items-center text-xl justify-center -rotate-90 underline-offset-8 "><h3 class="text-white"><u>Residential</u></h3></P></div>
+            <div class="w-[50%] h-[50%] flex items-center text-xl justify-center -rotate-90 underline-offset-8 "><h3 class="text-white"><u>Commercial</u></h3></div>
+          </div>
+          <div class="cards-container md:h-[300px] h-[300px] lg:w-[96vw] bg-pink-500 container flex w-[85%] items-center pt-10 sm:pt-1 overflow-hidden" id="articles-container">
+              <div class="py-[10px] md:w-[300px] w-[200px] h-[280px] bg-gray-600 ml-[20px] mb-10 mt-10">
+                <img src="#" alt="">
+              </div>
+              
+          </div>
+        </main> -->
+
+
+        <div class="h-[24vh] md:h-[36vh] lg:h-[50vh] w-[100%]  mt-[10px] flex">
+          <div class="w-[50%]">
+              <img class="w-full h-full object-cover" src="img4.jpg" alt="">
+          </div>
+          <div class="w-[50%] flex justify-center items-center">
+              <h1 class="pacifico-regular text-[14px] md:text-2xl lg:text-3xl p-8 px-6 lg:px-18 lg:w-[80%] w-100%">From bare walls to vibrant tales, our designs inspire, Where interiors meets imagination, Every Space Sings.</h1>
+          </div>
+      </div>
+      <!-- footer starts here -->
+      <footer class="bg-gray-900 text-white py-8 mt-[30px]">
+        <div class="container mx-auto lg:px-[70px]">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+              <p class="text-lg font-semibold">Design Factory Group</p>
+              <p class="text-sm">Ambikanagar road, Nayapara, Siliguri, West Bengal 735135</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+              <ul class="flex justify-center md:justify-end space-x-4">
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:justify-end mt-8">
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-instagram w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-facebook w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-twitter w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+          <div class="border-t border-gray-800 mt-8 pt-4 text-center">
+            <p class="text-sm">©2024 Design Factory Group. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+       <!-- Residential and commercial section ends -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script src="script.js"></script>
+       <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () => {
+       // Toggle the 'top-16' class on the dropdown menu
+        console.log("Toggle button clicked");
+        dropdown.classList.toggle('top-16');
+        });
+
+       </script>
+</body>
+</html>
