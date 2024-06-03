@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .main{
+        z-index: 100; /* Higher z-index for the navbar */
+      }
+      i{
+        color: #4070f4;
+      }
+      
+      img{
+        object-fit: contain;
+      }
+      #project{
+        margin-top: -30px;
+        padding: 0;
+        margin-left: 0;
+      }
+      .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .karla-regular {
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .dropdown-menu {
+       position: absolute;
+       top: -100%;
+       left: 0;
+       background-color: white;
+       width: 100%;
+    /* Other styles... */
+    }
+    
+    
+    </style>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="main">
+      <nav class="flex justify-between items-center px-12 h-16 md:gap-8">
+        <a href="#" class="text-2xl font-bold md:hidden"><img class="h-16 w-28" src="logo.jpg" alt=""></a>
+        <div class="dropdown-menu absolute bg-white w-full flex flex-col gap-6 items-center py-2 text-lg font-bold md:static md:bg-white md:flex-row md:justify-between" style="z-index: 100;">
+          <a href="#" class="text-2xl  pacifico-regular">Design Factory .</a>
+          <ul class = "flex flex-col items-center gap-[4vw] md:flex-row md:gap-6  ">
+            <li class="hover:text-orange-300">Home</li>
+            <li class="hover:text-orange-300">Projects</li>
+            <li class="hover:text-orange-300">Hiring</li>
+            <li class=  "text-orange-400 whitespace-nowrap"><a href="./Aboutus/aboutus.html"> About us </a></li>
+            <li class="hover:text-orange-300 whitespace-nowrap">Contact us</li>
+          </ul>
+          <div class="flex flex-col items-center gap-6 md:flex-row lg:gap-10">
+            <button class="hover:text-orange-400">Login</button>
+            <button class="bg-orange-400 hover:bg-orange-200 rounded-lg px-2 py-1">SignUp</button>
+          </div>
+        </div>
+        <div class="toggle-button md:hidden cursor-pointer">
+          <i class = "fa-solid fa-bars fa-lg"></i>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar ends -->
+     <!--Body Starts  -->
+    <div class="w-full pt-14">
+      <h1 class="flex justify-center text-xl md:text-3xl text-[#333] karla-regular">About us</h1>
+      <hr class="w-20 h-[1px] mx-auto my-8 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    </div>
+      <div>
+        <p class="text-center px-20 lg:px-48 md:text-[16px] font-bold text-[#003c56] text-[10px] italic">
+          We turn your dream spaces into reality with expert design and construction services,<br> encompassing everything from initial planning to the final build. 
+          <br> Our dedicated team ensures a seamless and personalized experience for each client.</p>
+      </div>
+      <div>
+
+      </div>
+      <div>
+        <p class="text-center text-[18px] md:text-2xl  pt-20">How we work</p>
+        <p class=" px-20 pt-4 lg:px-48 md:text-[16px] text-[10px]">Our process begins with a thorough consultation to understand your vision, needs and budget, ensuring our design approach aligns perfectly with your expectations. We then move on to the planning and design phase, where our team creates detailed plans and innovative designs, including 3D visualizations and material selections, tailored to your preferences. Once the design proposal and budget estimate are ready, we present them for your approval, making any necessary adjustments based on your feedback to ensure everything is just right.</p>
+        <p class=" px-20 pt-4 lg:px-48 md:text-[16px] text-[10px]">With your approval, we proceed to the construction phase, where our skilled professionals manage all aspects of building, from laying foundations to applying the final finishes, upholding the highest standards of quality and craftsmanship. After the construction is complete, we focus on interior and exterior finishing, adding the final touches, including decor and landscaping, to bring your dream space to life with meticulous attention to detail.</p>
+        <p class=" px-20 pt-4 lg:px-48 md:text-[16px] text-[10px]">Finally, we conduct a thorough walkthrough with you to ensure every detail meets your satisfaction, making any last adjustments as needed. We then hand over the completed project along with all necessary documentation and provide ongoing support to address any post-construction needs or queries, ensuring your complete satisfaction.</p>
+      </div>
+    <!-- Corousal Starts -->
+    <section class="container-1 w-full my-8">
+      <div class="testimonial mySwiper mx-20 rounded-xl bg-orange-200 md:mx-48 h-full relative overflow-hidden">
+        <div class="testi-content swiper-wrapper cursor-grab">
+          <!-- Slide 1 -->
+          <div class="slide swiper-slide flex items-center flex-col px-12 lg:px-32 justify-center pt-10">
+            <img src="img2.jpg" alt="Client photo" class="lg:w-42 lg:h-42 rounded-full object-cover h-24 w-24 border-orange-400">
+            <p class="mt-4 text-[#003c56] italic font-bold md:text-xl text-base">
+              <i class='bx bxs-quote-alt-left'></i>
+              Architecture is about to come up with some asthetic designs and structure that are not only beautiful but also functional.             
+              <i class='bx bxs-quote-alt-right'></i>
+            </p>
+            <div class="details mt-3 mb-8 flex flex-col items-center">
+              <span class="font-bold text-gray-800 md:text-lg text-base">Himanshu Singh</span>
+              <p class="text-gray-500 md:text-sm text-xs">(B.Arch)</p>
+              <p class="text-gray-500 md:text-sm text-xs">(Principal Architect)</p>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="slide swiper-slide flex items-center flex-col px-12 lg:px-32 justify-center pt-10">
+            <img src="img4.jpg" alt="Client photo" class="lg:w-42 lg:h-42 rounded-full object-cover h-24 w-24 border-orange-400">
+            <p class="mt-4 text-[#003c56] italic font-bold md:text-xl text-base">
+              <i class='bx bxs-quote-alt-left'></i>
+              Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment              <i class='bx bxs-quote-alt-right'></i>
+            </p>
+            <div class="details mt-3 mb-8 flex flex-col items-center">
+              <span class="font-bold text-gray-800 md:text-lg text-base">Nishikanta Sarkar</span>
+              <p class="text-gray-500 md:text-sm text-xs">(Civil Engineer)</p>
+              <p class="text-gray-500 md:text-sm text-xs">(Principal Designer)</p>
+            
+            </div>
+          </div>
+         
+  
+          <!-- Slide 3 -->
+          <div class="slide swiper-slide flex items-center flex-col px-12 lg:px-32 justify-center pt-10 ">
+            <img src="img1.jpg" alt="Client photo" class="lg:w-42 lg:h-42 rounded-full object-cover h-24 w-24 border-orange-400">
+            <p class="mt-4 text-[#003c56] italic font-bold md:text-xl text-base">
+              <i class='bx bxs-quote-alt-left'></i>
+              Architecture is about creating spaces that are both functional and beautiful, enhancing how we live and interact with our surroundings.
+              <i class='bx bxs-quote-alt-right'></i>
+            </p>
+            <div class="details mt-3 mb-8 flex flex-col items-center">
+              <span class="font-bold text-gray-800 md:text-lg text-base">Mukul Joshi</span>
+              <p class="text-gray-500 md:text-sm text-xs">(B.Arch)</p>
+              <p class="text-gray-500 md:text-sm text-xs">(Associate Architect)</p>
+            </div>
+          </div>
+          
+
+          <!-- Slide 4 -->
+           <div class="slide swiper-slide flex items-center flex-col px-12 lg:px-32 justify-center pt-10">
+            <img src="img3.jpg" alt="Client photo" class="lg:w-42 lg:h-42 rounded-full object-cover h-24 w-24 border-orange-400">
+            <p class="mt-4 text-[#003c56] italic font-bold md:text-xl text-base">
+              <i class='bx bxs-quote-alt-left'></i>
+              Their attention to detail and commitment to excellence exceeded my expectations.
+              <i class='bx bxs-quote-alt-right'></i>
+            </p>
+            <div class="details mt-3 mb-8 flex flex-col items-center">
+              <span class="font-bold text-gray-800 md:text-lg text-base">Sunita Sen</span>
+              <p class="text-gray-500 md:text-sm text-xs">(Interior Designer)</p>
+              
+            </div>
+          </div>
+          
+          <!-- Additional slides can be added here -->
+        </div>
+          <!-- Navigation buttons and pagination -->
+        
+      </div>
+    </section>
+    <!-- Corousal Ends -->
+
+     <!-- Body Ends -->
+
+    
+    <!-- footer starts here -->
+      <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto lg:px-[70px]">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+              <p class="text-lg font-semibold">Design Factory Group</p>
+              <p class="text-sm">Ambikanagar road, Nayapara, Siliguri, West Bengal 735135</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+              <ul class="flex justify-center md:justify-end space-x-4">
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:justify-end mt-8">
+            <div class="flex space-x-4">
+              <a href="https://www.instagram.com/design_factory_group/?utm_source=qr&igsh=MTgybzU2aG94Nmg2dw%3D%3D" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-instagram w-6 h-6"></i>
+              </a>
+              <a href="https://www.facebook.com/people/Design-Factory-Group/100064330803074/?mibextid=ZbWKwL" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-facebook w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-twitter w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+          <div class="border-t border-gray-800 mt-8 pt-4 text-center">
+            <p class="text-sm">©2024 Design Factory Group. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+       <!-- Residential and commercial section ends -->
+       <!-- Include Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 1,
+      //   spaceBetween: 30,
+      //   loop: true,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      
+    });
+    </script>
+       <script src="script.js"></script>
+       <!-- Swipper js -->
+       <script src="swiper-bundle.js"></script>
+       <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () => {
+       // Toggle the 'top-16' class on the dropdown menu
+        console.log("Toggle button clicked");
+        dropdown.classList.toggle('top-16');
+        });
+
+       </script>
+       
+
+</body>
+</html>
